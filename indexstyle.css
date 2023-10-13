@@ -1,0 +1,713 @@
+
+button.normal{
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+	}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px;
+	background-color: #f2f2f2
+	/* box-shadow: 0 5px 15px #bfbfbf;
+	
+	position: sticky; */
+	
+	
+}
+#navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+
+#navbar li a{
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	transition: 0.3s ease;
+}
+#navbar>li>a:hover {
+	/*color: 088178;*/
+	color: powderblue;
+	
+
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+	color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #088178;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+#hero{
+	background-image: url(https://media.istockphoto.com/id/955641488/photo/clothes-shop-costume-dress-fashion-store-style-concept.jpg?b=1&s=170667a&w=0&k=20&c=MtszLkTiMEzeNgPCrJuhTQoy_fXT0wV1ks95CyBvq0I=);
+
+	height: 500px;
+	background-size: cover;
+	background-position: top 25% right 0;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#hero h4{
+	padding-bottom: 15px;
+		
+}
+#hero h1{
+	color: #088178;
+	
+}
+#hero p{
+	color:#cc0044;
+}
+#hero button{
+	background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Flovepik.com%2Fimages%2Fpng-black-button.html&psig=AOvVaw2EQTAXmscyD3j4QQ98pop9&ust=1680588660353000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJCUnuSHjf4CFQAAAAAdAAAAABAR")
+	backgrond-color transparent;
+	color: #088178;
+	border: 0;
+	padding: 14px 80px 14px 65px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 15px;
+	border-radius: 5px;
+}
+#hero button:hover{
+	background: #088178;
+	color:#fff;
+}
+.fe-box{
+	margin: 10px; padding: 10px; border: solid 1px ; display: inline-block; border-radius: 5px,;
+}
+.fe-box>img{
+	margin: 0px; padding: 0px; height: 100px;
+	height: 88px;
+}
+.fe-box>h4{
+margin: 15px; padding: 5px; text-align: center;  font-weight: bold; font-size: 15px; color: #088178;  background-color: #eeafaf;
+}
+.fe-box:hover{
+	box-shadow: 10px 10px 54px #bfbfbf;
+}
+#product1{
+	text-align: center;
+}
+.pro-container{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 30px;
+	flex-wrap: wrap;
+}
+.pro{
+	width: 20%;
+	min-width: 200px;
+	padding: 10px 12px;
+	border: 1px solid #1a1a1a;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+	margin: 15px 0px;
+	transition: 0.2s ease;
+
+}
+.pro:hover{
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+}
+.pro>img{ 
+	width: 200px;
+	/* height: 100px; */
+	border-radius: 20px;
+}
+.des{
+	text-align: start;
+	padding: 10px 0;
+}
+.des>span{
+	font-size: 20px;
+	color: #636060;
+	margin: 0px;
+	padding: 0px;
+	
+	
+}
+.des>h5{
+	margin: 0px;
+	color: #1a1a1a;
+	font-size: 15px;
+}
+.des>h6{
+	margin: 0px;
+	color: #1a1a1a;
+	
+}
+.star{
+	text-align: start;
+	font-size: 20px;
+	color: yellowgreen;
+}
+.des h4{
+	margin: 0px;
+	padding-bottom: 5px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #088178;
+}
+.no-bullets{
+	
+	display: inline;
+}
+
+#banner{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url(https://plus.unsplash.com/premium_photo-1677995700893-5266e4e8fc5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGUlMjBjb21tZXJjZXxlbnwwfHwwfHw%3D&w=1000&q=80); 
+	width: 100%;
+	height: 40vh;
+	background-size: cover;
+	background-position: center;
+}
+#banner.h4{
+	font-size: 16px;
+}
+#baneer.h2{
+	font-size: 30px;
+	padding: 10px 0;
+}
+#banner button:hover{
+	background: #088178;
+	color: #fff;
+}
+.cart>img{
+	height: 20px;
+	display: inline;
+
+}
+.cart>p{
+	margin-left: 3px;
+	display: inline;
+}
+.cart{
+	
+padding: 8px;
+border-radius: 4px;
+display: inline;
+	border: solid 1px black;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.cart>img:hover{
+	background-color: #088178;
+}
+.cart>p:hover{
+	background-color: #088178;
+}
+#sm-banner button:hover{
+	background:#088178;
+	color: #fff;
+}
+#sm-banner{
+	display: flex;
+	justify-content:space-between;
+	padding-left: 4%;
+	padding-right: 5%;
+	
+}
+.banner-box{
+	padding: 10px;
+	display: flex; 
+	 flex-direction: column; 
+	 justify-content: center; 
+	 align-items: flex-start;
+	margin: 10px;
+	background-image: url(https://t4.ftcdn.net/jpg/03/20/46/13/360_F_320461388_5Snqf6f2tRIqiWlaIzNWrCUm1Ocaqhfm.jpg); 
+	width: 100%;
+	height: 50vh; 
+	background-size: cover;
+	background-position: center;
+}
+.banner-box2{
+	
+	float: left;
+	
+	background-image: url("images/e-com/main1.jpg"); 
+}
+
+
+#sm-banner h4{
+	color:white;
+	font-size: 20px;
+	font-weight: 300;
+}
+#sm-banner h2{
+	color:white;
+	font-size: 28px;
+	font-weight: 800;
+}
+#sm-banner span{
+	color:white;
+	font-size: 14px;
+	font-weight: 500;
+	
+	padding-bottom: 15px;
+}
+button.white{
+	font-size: 13px;
+	font-weight: 600;
+	padding: 11px 18px;
+	color: #fff;
+	background-color:transparent;
+	cursor: pointer;
+	border: 1px solid #fff;
+	outline: none;
+	transition: 0.2s;
+	}
+	.banner-box:hover button{
+		background-color: #088178;
+		border: 1px solid #088178;
+	}
+
+	#banner3{
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			margin: 10px;
+			background-image: url(https://cdn.shopify.com/s/files/1/0006/0420/9215/articles/cute_feminine_winter_outfits_1000.jpg?crop=center&v=1606358365&width=700)  ; 
+			/* background-image: ; */
+			min-width: 30%;
+			height: 30vh;
+			background-size: cover;
+			background-position: center;
+			padding: 20px;
+			margin-bottom: 20px;
+	}
+	#banner3 h2{
+		color:#1a1a1a;
+		font-weight: 900;
+		font-size: 30px;
+		padding: 20px;
+	}
+	#banner3 h3{
+		color: #1a1a1a;
+		font-weight: 800;
+		font-size: 25px;
+		margin: 20px;
+
+	}
+	#banner3{
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 10px;
+		background-image: url("images/manwomen.jpg"); 
+		min-width: 30%;
+		height: 30vh;
+		background-size: cover;
+		background-position: center;
+		padding: 20px;
+		margin-bottom: 20px;
+}
+#banner3 h2{
+	color:#1a1a1a;
+	font-weight: 900;
+	font-size: 30px;
+	padding: 20px;
+}
+#banner3 h3{
+	color: #1a1a1a;
+	font-weight: 800;
+	font-size: 25px;
+	margin: 20px;
+
+}
+#banner3{
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 10px;
+	background-image: url(https://cdn.shopify.com/s/files/1/0006/0420/9215/articles/cute_feminine_winter_outfits_1000.jpg?crop=center&v=1606358365&width=700); 
+	min-width: 30%;
+	height: 30vh;
+	background-size: cover;
+	background-position: center;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#banner3 h2{
+color:#1a1a1a;
+font-weight: 800;
+font-size: 25px;
+/* padding: 20px; */
+}
+#banner3 h3{
+color: #1a1a1a;
+font-weight: 600;
+font-size: 15px;
+margin: 20px;
+
+}
+
+.banners{
+	display: flex;
+	flex-direction: row;
+	padding: 20px 30px;
+}
+
+
+#newsletter{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	
+	background-position: 20% 30%;
+	background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color:#fff;
+    margin: 20px;
+    padding: 5px;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    margin: 20px;
+    padding: 3px;
+}
+#newsletter p span{
+    color:#ffd966;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    margin-right: 15px;
+    /* padding: 0 1.25em; */
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+#newsletter button{
+	 background-color:#088178; 
+	color: #003366; 
+	white-space: nowrap;
+}
+#newsletter button:hover{
+	color:#fff;
+}
+footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 10px;
+	font-size: 25px;
+}
+.col{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	margin: 20px;
+	padding: 20px;
+	font-size: 20px;
+}
+
+.logo{
+	margin-bottom: 20px;
+}
+footer h4{
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+footer p{
+	font-size: 14px;
+	margin: 0 0 8px 0;
+}
+.fallow img{
+	
+	padding-right: 2px;
+	cursor: pointer;
+}
+.install.row img{
+	border: 1px solid #088178;
+	border-radius: 6px;
+}
+#feature{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px 30px;
+}
+#page-header.blog-header{
+	background-image: url(images/blog/1.jpg);
+	width: 100%;
+	height: 40vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+	color: #f2f2f2;
+}
+#blog{
+	padding: 150px 150px 0px 150px;
+}
+.blog-box{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: relative;
+	padding-bottom: 90px;
+}
+.blog-img{
+	width: 50%;
+	margin-right: 40px;
+}
+#blog img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.blog-details{
+	width: 50%;
+	padding-left: 50px;
+	/* margin-bottom: 40%; */
+}
+.blog-details a{
+	font-weight: 700;
+	position: relative;
+	transition: 0.3s;
+}
+.blog-details a::after{
+	content: "";
+	width: 50px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	top: 4px;
+	right: -60px;
+}
+.blog-details a:hover{
+	color: #088178;
+}
+.blog-details a:hover::after{
+	background-color: #088178;
+}
+.blog-box h1{
+	position: absolute;
+	left: 0;
+	font-size: 70px;
+	font-weight: 200;
+	color:#818ea0;
+	margin-bottom: 40%;
+	
+}
+#page-header.about-header{
+	background-image: url(images/about/1.jpg);
+	width: 100%;
+	height: 40vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	flex-direction: column;
+	padding: 14px;
+	color: #003366;
+	font-weight: 1000;
+	
+}
+#about-head{
+	display: flex;
+	align-items: center;
+	margin: 50px;
+	
+}
+#about-head img{
+	width: 50%;
+	height: auto;
+}
+#about-head div{
+	padding: 40px;
+}
+#about-app{
+	text-align: center;
+	font-weight: 100;
+}
+.video{
+	height:  600px;
+}
+
+.video img{
+	height: 500px;
+	width: 400px;
+	padding-left:80px;
+	padding-right: 80px;
+    justify-content: center;
+	margin: 20px;
+	align-items: center;
+	border-radius: 20px;
+}
+#page-header.contact-header{
+	background-image: url(images/contact/1.jpg);
+	opacity: 0.5;
+	
+}
+#page-header.contact-header{
+	width: 100%;
+	height: 40vh;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	padding: 14px;
+	padding-top: 30px;
+	color: #f2f2f2;
+	font-weight: 1000;
+}
+#contact-details{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.details{
+	margin: 30px;
+	width: 40%;
+}
+.details span,
+#form-details form span{
+	font-size: 20px;
+}
+.details h2,
+#form-deatils form h2{
+	font-size: 26px;
+	line-height: 35px;
+	padding: 10px 0;
+}
+.details h3{
+	font-size: 16px;
+	padding-bottom: 10px;
+	
+}
+.details li{
+	list-style: none;
+	padding: 10px 0;
+	display: flex;
+}
+.details li i{
+	padding-right: 22px;
+}
+.details li p{
+	margin: 0;
+	padding: 10px;
+}
+.map{
+	width: 55%;
+	height: 400px;
+}
+.map iframe{
+	width: 100%;
+	height: 100%;
+	/* margin-right: 30px; */
+	padding: 20px;
+}
+#form-details{
+	display: flex;
+	justify-content: space-between;
+	margin: 30px;
+	padding: 80px;
+	border: 1px solid #e1e1e1;
+}
+#form-details form{
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+	width: 100%;
+	margin: 30px;
+	padding: 12px 15px;
+	outline: none;
+	margin-bottom: 20px;
+	border: 1px solid #e1e1e1;
+
+}
+#form-details form button{
+	background-color: #088178;
+	color: #fff;
+	margin: 30px;
+}
+#form-details  button:hover{
+	background: #fff;
+	color:#088178;
+}
+.people div{
+	padding-bottom: 25px;
+	display: flex;
+	align-items: flex-start;
+}
+.people div img{
+	/* width:65px;
+	height: 65px; */
+	object-fit: cover;
+	margin-right: 15px;
+}
+.people div p{
+	margin: 0;
+	font-size: 13px;
+	line-height: 25px;
+}
+.people div p span{
+	display: block;
+	font-size: 16px;
+	font-weight: 600;
+	color: #000;
+}
+
